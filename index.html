@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <div class="d1-1-1">
+                       <spam>Seu voto para</spam> 
+                    </div>
+                    <div class="d1-2">
+                       <spam>VEREADOR</spam> 
+                    </div>
+                    <div class="d1-3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="d1-4">
+                       Fulano cicrano <br> 
+                       partido social <br> 
+                       Vice-prefeito: cicrano  
+                    </div>
+                </div>
+                <div class="d-1-rigth">
+                    <div class="d1-image1">
+                        <img src="images/tha.jpg" alt="">
+                        Prefeito
+                    </div>
+                    <div class="d1-image1 small">
+                        <img src="images/amideth.jpg" alt="">
+                        Vice Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                Toque na tecla: <br>
+                Confirma para Confirmar o voto: <br>
+                Corrige para reiniciar o voto: 
+            </div>
+        </div>
+
+        <!-- trabalha com o teclado da urna -->
+        
+        <div class="teclado">
+            <!-- <audio>
+                        <source autoplay src="sbotao.mp4">
+            </audio> -->
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('1')">1</div>
+                <div class="teclado--botao" onclick="clicou('2')">2</div>
+                <div class="teclado--botao" onclick="clicou('3')">3</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('4')">4</div>
+                <div class="teclado--botao" onclick="clicou('5')">5</div>
+                <div class="teclado--botao" onclick="clicou('6')">6</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('7')">7</div>
+                <div class="teclado--botao" onclick="clicou('8')">8</div>
+                <div class="teclado--botao" onclick="clicou('9')">9
+                     
+                </div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao" onclick="clicou('0')">0</div>
+            </div>
+            <div class="teclado--linha">
+                <div class="teclado--botao botao--branco" onclick="branco()">Branco</div>
+                <div class="teclado--botao botao--corrige" onclick="corrige()">Corrige</div>
+                <button class="teclado--botao botao--confirma" onclick="confirma()">Confirma
+                  <audio preload="metadata">
+                      <source src="sfin.mp4" type="audio/mpeg">
+                      <source src="sfin.mp4" type="audio/ogg">
+                      <source src="sfin.mp4" type="audio/wav">
+                  </audio>      
+                </button>
+            </div>
+            
+        
+        </div>
+        
+    </div>
+   
+    <div id="modalp" class="modalc">
+        <div class="modal">
+            <button class="fechar">x</button>
+            <h3 class="subt">Para Iniciar a votação escolha os candidatos</h3>
+            <form action="">
+                <h4 class="subt-1">&nbsp;Votar na sequencia  :&nbsp;<br>&nbsp;Vereadores <br>&nbsp;10100 ou 73889 <br></h4> 
+                <h4 class="subt-2">&nbsp; Número para votar no Prefeito&nbsp;<br>&nbsp; 99 ou 84 <br></4> 
+                 
+            </form>
+            <h4 class="subt-3">Obrigado :D</h4>
+        </div>
+    </div>
+
+    <script src="etapas.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
